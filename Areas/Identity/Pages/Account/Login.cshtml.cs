@@ -89,7 +89,8 @@ namespace Senior_Learner_Admin_System.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    //return LocalRedirect(returnUrl);
+                    return Redirect("https://projectdashboard01.azurewebsites.net/Create_Project");
                 }
                 if (result.RequiresTwoFactor)
                 {
